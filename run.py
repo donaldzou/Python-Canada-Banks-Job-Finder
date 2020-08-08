@@ -15,7 +15,7 @@ timeout = 600 # Change this for how long the program will fetch jobs, this is co
 email_timeout = 30 # Change this for how long the program will check pending email.
 email_count = 3 # Change this for the number of new jobs founded and send an email.
 
-email_reciever = ["donaldzou@live.hk","dzou23@uwo.ca"]
+email_reciever = ["blah@example.com","blah@example.com"]
 
 def email(email_add,content):
     import email
@@ -47,8 +47,8 @@ def email(email_add,content):
     s.ehlo()
     s.starttls()
     s.ehlo()
-    s.login('wolframdiscordbot@outlook.com', 'Jimolkio0~')
-    s.sendmail("wolframdiscordbot@outlook.com", reciever, msg.as_string())
+    s.login('blah@example.com', 'blahblah')
+    s.sendmail("blah@example.com", reciever, msg.as_string())
     s.quit()
     print('Email Sent to '+email_add)
     print("--------")
